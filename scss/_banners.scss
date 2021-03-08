@@ -1,0 +1,40 @@
+
+.banners{
+ margin:0;
+ position:relative;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction:column;
+ width:100%;
+ height:var(--alto-banner);
+ max-width:100%;
+
+ .frase{
+	  position:absolute;
+  	top:2vh;
+  	font-family: 'banner', sans serif;
+    width:80%;
+		font-size: $sizeLetra1;
+		text-align: center;
+   span{
+		 font-family: 'font2Light', sans serif;
+		 font-size: $sizeLetraAutor;
+	 }//span
+ }//frase
+ .titulo{
+   margin-top: 5vh;
+	 width: 80%;
+	 text-align: center;
+	 position:absolute;
+	 bottom:0;
+	 font-size: $sizeLetraTitulo;
+  text-shadow: -3px 3px 2px rgba(153,153,153,0.6);	
+	font-family: 'fontLogo',  sans serif;
+ }
+}//banners
+
+.banner1{
+ background-image: linear-gradient( to bottom,  $color-fondo1 10%, #5f858e 45%, #cfcfcf 80% );
+}
+

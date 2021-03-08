@@ -1,0 +1,97 @@
+
+:root{
+ //generales
+ --size-letra: calc(.8em + 1vw);
+ --size-letra-small: calc(.6em + 1vw);
+ //menu
+ --alto-barra-menu: 20vmin;
+ --size-logo: 30vmax;
+ //slider
+ --alto-slider: 60vh;
+ //banner
+ --alto-banner: 6.5em;
+}
+@media (max-width:768px){
+ :root{
+ // --alto-banner: 20vmax;
+ }
+}
+@media (min-width:768px){
+  :root{
+   --alto-barra-menu: 15vmin;
+  }
+}
+@media (min-width:1024px){
+   :root{
+     --size-logo: 20vmax;
+	 }
+}
+@media (orientation:landscape){
+ :root{
+  --alto-slider: 80vh;
+ }
+ @media (min-width:768px){ 
+  :root{
+   --alto-slider: 85vh;
+   }
+ }
+}
+
+$azul: #297ea8;
+$blanco: #fff;
+$color-fondo1: #004170;
+$logo-blanco: url("../assets/img/logo1.png");
+$logo-gris: url("../assets/img/logo2.png");
+$alto-menu: 20vmin;
+$sizeLetra1: calc(1em + 1vw);//letra normal
+$sizeLetraAutor: calc(.4em + 1vw);//letra autor pequeña
+$sizeLetraTitulo: calc(1.5em + 1vw);
+
+@font-face{
+	//src:url('http://agrobiologicosdepanama.com/proyecto/assets/fonts/Roboto-Regular.ttf');
+
+	src:url('../assets/fonts/Roboto-Regular.ttf');
+	font-family: 'font1';
+}
+@font-face{
+//	src:url('http://agrobiologicosdepanama.com/proyecto/assets/fonts/Roboto-Light.ttf');
+	src:url('../assets/fonts/Roboto-Light.ttf');
+	font-family: 'font1Light';
+}
+@font-face{
+//	src:url('http://agrobiologicosdepanama.com/proyecto/assets/fonts/Ubuntu-Regular.ttf');
+	src:url('../assets/fonts/Ubuntu-Regular.ttf');
+	font-family: 'font2';
+}
+@font-face{
+//	src:url('http://agrobiologicosdepanama.com/proyecto/assets/fonts/Ubuntu-Light.ttf');
+	src:url('../assets/fonts/Ubuntu-Light.ttf');
+	font-family: 'font2Light';
+}
+@font-face{
+//	src:url('http://agrobiologicosdepanama.com/proyecto/assets/fonts/Roboto-Bold.ttf');
+	src:url('../assets/fonts/Roboto-Bold.ttf');
+	font-family: 'font2Title';
+}
+@font-face{  
+//	src:url('http://agrobiologicosdepanama.com/proyecto/assets/fonts/advent-Re.otf');
+	src:url('../assets/fonts/logo/advent-Re.otf');                                        
+	font-family: 'fontLogo';               
+
+}
+
+@font-face{
+//	src:url('http://agrobiologicosdepanama.com/proyecto/assets/fonts/tmp/Modernline.ttf');
+	src:url('../assets/fonts/tmp/Modernline.ttf');
+	font-family: 'fontSlide';
+}
+@font-face{
+//	src:url('http://agrobiologicosdepanama.com/proyecto/assets/fonts/tmp/wildy_sans/wildy_sans.ttf');
+	src:url('../assets/fonts/tmp/wildy_sans/wildy_sans.ttf');
+	font-family: 'banner';
+}
+@font-face{
+//	src:url('http://agrobiologicosdepanama.com/proyecto/assets/fonts/tmp/wildy_sans/wildy_sans.ttf');
+	src:url('../assets/fonts/tmp/OldBook.ttf');
+	font-family: 'pizarra';
+}

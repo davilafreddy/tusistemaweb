@@ -1,0 +1,39 @@
+$azul: #297ea8;
+$blanco: #fff;
+$color-fondo1: #004170;
+$logo-blanco: url("../assets/img/logo1.png");
+$logo-gris: url("../assets/img/logo2.png");
+$alto-menu: 20vmin;
+$sizeLetra1: calc(1em + 1vw);//letra normal
+$sizeLetraAutor: calc(.4em + 1vw);//letra autor pequeña
+$sizeLetraTitulo: calc(1.7em + 1vw);
+
+@font-face{
+	src:url('../assets/fonts/Roboto-Regular.ttf');
+	font-family: 'font1';
+}
+@font-face{
+	src:url('../assets/fonts/Roboto-Light.ttf');
+	font-family: 'font1Light';
+}
+@font-face{
+	src:url('../assets/fonts/Ubuntu-Regular.ttf');
+	font-family: 'font2';
+}
+@font-face{
+	src:url('../assets/fonts/Ubuntu-Light.ttf');
+	font-family: 'font2Light';
+}
+@font-face{
+	src:url('../assets/fonts/Ubuntu-Title.ttf');
+	font-family: 'font2Title';
+}
+
+@font-face{
+	src:url('../assets/fonts/tmp/ModernLine.otf');
+	font-family: 'fontSlide';
+}
+@font-face{
+	src:url('../assets/fonts/tmp/wildy_sans/wildy_sans.ttf');
+	font-family: 'banner';
+}
