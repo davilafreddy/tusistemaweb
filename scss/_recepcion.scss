@@ -34,20 +34,85 @@ $ancho_marco: .6rem;
 	 display:flex;
    justify-content: center;
 	 align-items:center;
+	 filter:blur(10px);
+	}//mascara_recepcion
+
+  
 	 .vidrio{
-     background-color: white;
      width:90%;
 		 height:90%;
-		 
+		 border-radius:10px;
+		 position:absolute;
+	   top:5%;
+	   left:5%;
+		 display:flex;
+		 flex-direction:column;
+		 //justify-content:center;
+		 align-items:center;
+		 z-index:10;
+		 background: rgba(255,255,255,.2);
+		 box-shadow: 0 8px 32px 0 rgba(6,6,6,.2);
+		backdrop-filter: blur(2px);
+		// filter:blur(10px);
+		.vidrio-titulo{
+		 width:100%;
+		 height:30%;
+		 padding-top:3%;
+		 color:white;
+		 text-align: center;
+		 font-family: 'font2', sans serif;
+		 font-size:$sizeChica;
+		 font-weight:bold;
+		 p{
+		  font-weight:normal;
+      font-size:$sizeLetra1;
+
+      span{
+       font-size:$sizeBienvenida;
+  	   font-family: 'fontSlide', sans serif;
+			 transform: rotate(355deg);
+       -webkit-transform: rotate(355deg);
+       -moz-transform: rotate(355deg);
+			 display:inline-block;
+			 padding-top:3%;
+			 &::after{
+				content:'';
+				bottom: -0.5rem;
+        left: 2rem;
+        right: -0.5rem;
+        height: 0.5rem;
+				width:80%;
+        background-image:url("../assets/img/recepcion/subrayado.svg");
+			  background-repeat:no-repeat;
+				background-size:cover;
+				position:absolute;
+			  transform: rotate(355deg);
+        -webkit-transform: rotate(355deg);
+        -moz-transform: rotate(355deg);
+        z-index:12;
+			 }
+			}//span
+		 }//p
+		}//vidrio-titulo
+		.vidrio-mensaje{ 
+			font-family: 'font2', sans serif;
+			height:60%;
+			width:80%;
+      text-align:center;
+			padding-top:10%;
+			p{
+       padding-top:5%;
+			}
+		}
 	 }
-	}
+
 	.contenedor_puerta{
     position:relative;
 		width:100%;
 		height:100%;
 		top:0;
 		left:0;
-
+    z-index:20;
 		.marco_izquierdo{
       position:absolute;
 			top:0;

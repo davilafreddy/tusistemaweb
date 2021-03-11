@@ -44,8 +44,10 @@ $logo-blanco: url("../assets/img/logo1.png");
 $logo-gris: url("../assets/img/logo2.png");
 $alto-menu: 20vmin;
 $sizeLetra1: calc(1em + 1vw);//letra normal
+$sizeChica: calc(.5em + 1vw);//letra mas chica
 $sizeLetraAutor: calc(.4em + 1vw);//letra autor pequeña
 $sizeLetraTitulo: calc(1.5em + 1vw);
+$sizeBienvenida: calc(2em + 1vw);
 
 @font-face{
 	//src:url('http://agrobiologicosdepanama.com/proyecto/assets/fonts/Roboto-Regular.ttf');
@@ -92,6 +94,6 @@ $sizeLetraTitulo: calc(1.5em + 1vw);
 }
 @font-face{
 //	src:url('http://agrobiologicosdepanama.com/proyecto/assets/fonts/tmp/wildy_sans/wildy_sans.ttf');
-	src:url('../assets/fonts/tmp/OldBook.ttf');
+	src:url('../assets/fonts/tmp/pizarra/DKCrayon.ttf');
 	font-family: 'pizarra';
 }
