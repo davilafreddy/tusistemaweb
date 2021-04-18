@@ -434,14 +434,27 @@ body {
   -moz-transform: rotate(355deg);
   z-index: 12;
 }
-.recepcion .vidrio .vidrio-mensaje {
+.recepcion .vidrio .vidrio-mensaje-mascara {
   font-family: "font2", sans serif;
   height: 60%;
   width: 80%;
+  position: relative;
   text-align: center;
-  padding-top: 10%;
+  margin-top: 10%;
+  background-color: silver;
+  overflow: hidden;
 }
-.recepcion .vidrio .vidrio-mensaje p {
+.recepcion .vidrio .vidrio-mensaje-mascara .vidrio-mensaje {
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  top: 0;
+}
+.recepcion .vidrio .vidrio-mensaje-mascara .vidrio-mensaje .vidrio-mensaje-pag {
+  height: 50%;
+  width: 100%;
+}
+.recepcion .vidrio .vidrio-mensaje-mascara .vidrio-mensaje .vidrio-mensaje-pag p {
   padding-top: 5%;
 }
 .recepcion .contenedor_puerta {
